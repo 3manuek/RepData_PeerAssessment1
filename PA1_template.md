@@ -1,6 +1,12 @@
-# Reproducible Research: Peer Assessment 1
-Emanuel Calvo  
-Aug 16th 2015  
+---
+title: "Reproducible Research: Peer Assessment 1"
+author: "Emanuel Calvo"
+date: "Aug 16th 2015"
+output: 
+  html_document:
+    keep_md: true
+cache: false
+---
 
 
 > Repository at [github.](https://github.com/3manuek/RepData_PeerAssessment1)
@@ -122,7 +128,7 @@ dev.off()
 max_int <- steps_by_interval[which.max(steps_by_interval$steps),]
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 ```
 ## RStudioGD 
@@ -222,7 +228,7 @@ mea <- mean(comp_agg$count_steps)
 med <- median(comp_agg$count_steps)
 ```
 
-The mean of the total steps by date is 1.0765639\times 10^{4} and the 1.0762\times 10^{4}is `r med`.
+The mean of the total steps by date is 1.0765639 &times; 10<sup>4</sup> and the 1.0762 &times; 10<sup>4</sup>is `r med`.
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
